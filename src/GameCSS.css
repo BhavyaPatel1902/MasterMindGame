@@ -1,0 +1,177 @@
+#game,
+
+.cardblock {
+	padding: 10px 0 10px 10px;
+	width: 350px;
+}
+
+.current.cardblock {
+	border: gray 1px solid;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.pointer input[type="radio"] + label {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border: gray 2px solid;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.selected input[type="radio"] + label {
+	border-color: red;
+}
+
+
+.orange input[type="radio"] + label {
+	background: #FFB400;
+}
+
+.pink input[type="radio"] + label {
+	background: #FF5A5F;
+}
+
+
+.green input[type="radio"] + label {
+	background-color: #8CE071;
+}
+
+
+.blue input[type="radio"] + label {
+	background-color: #00D1C1;
+}
+
+
+.magneta input[type="radio"] + label {
+	background-color: #007A87;
+}
+
+
+.violet input[type="radio"] + label {
+	background-color: #7B0051;
+}
+
+.submit {
+	width: 20px;
+	height: 5px;
+	position: relative;
+	margin: 15px 7px;
+	border: none;
+	cursor: pointer;
+}
+
+.submitCard {
+   margin-left : 10px;
+   margin-top : 6px;
+   background-image : url(Submit.jpeg);
+   background-position: center;
+   width : 30px;
+   height: 30px;
+}
+
+.feedbacks-card {
+	width: 44px;
+}
+
+.feedback {
+	display: inline-block;
+	position: relative;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border: 1px solid #28222D;
+	border-radius: 50%;
+}
+
+.feedback.fullymatched {
+	background-color: black;
+}
+
+.feedback.partiallymatched {
+	background-color: white;
+}
+
+.feedback.notmatched {
+	background-color: red;
+}
+
+.finished {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index:1;
+	height: 100%;
+}
+.finished-alert-correct{
+	background-color: green;
+	position: relative;
+	left: 50%;
+	top: 40%;
+	margin-left: -170px;
+	padding: 20px;
+	width: 250px;
+	z-index: 3;
+	text-align: center;
+	color:white;
+}
+.finished-alert-wrong{
+	background-color : red;
+	position: relative;
+	left: 50%;
+	top: 40%;
+	margin-left: -170px;
+	padding: 15px;
+	width: 250px;
+	z-index: 3;
+	text-align: center;
+	color:white;
+}
+
+.finished-btn {
+	height: 30px;
+	text-align: center;
+	width: 120px;
+	margin-top: 20px;
+	border-radius: 40px;
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+.left {
+	float: left;
+	margin-left : 10px;
+}
+
+.right {
+	float: right;
+}
+
+.board{   
+		margin-left : 600px;
+}
+
+.clearfix:after {
+	content: "";
+	display: flex;
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+.colorpointers{
+	width: 70px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.colorpointers .pointer input[type="radio"] + label {
+	margin-top: 0px;
+}
